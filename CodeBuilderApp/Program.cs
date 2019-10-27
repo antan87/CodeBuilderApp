@@ -9,7 +9,7 @@ namespace CodeBuilderApp
         private static async Task Main(string[] args)
         {
             var factory = new MSBuildWorkspaceFactory();
-            var workspace = await factory.GetWorkspace(@"C:\Users\Antan87\source\repos\C#\Test\CodeBuilderApp\CodeBuilderApp.sln");
+            var workspace = await factory.GetWorkspace(@"C:\Users\Antan87\source\repos\C#\Test\TestApp\TestApp.sln");
             var handler = new MSBuildWorkspaceHandler(workspace);
         }
     }
